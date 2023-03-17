@@ -10,6 +10,11 @@
 			type="image/png"
 			sizes="32x32"
 			href="./assets/images/favicon-32x32.png" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+			rel="stylesheet" />
 
 		<title>Frontend Mentor | Results summary component</title>
 
@@ -22,19 +27,79 @@
 			.attribution a {
 				color: hsl(228, 45%, 44%);
 			}
+			/*
+        My Style Below 
+      */
+			* {
+				margin: 0;
+				padding: 0;
+			}
+			html {
+				margin: 0% auto;
+				font-size: 16px;
+				font-family: "Hanken Grotesk", sans-serif;
+				font-weight: 500;
+			}
+			.First-Container {
+				background: linear-gradient(
+					0deg,
+					hsl(241, 81%, 54%) 0%,
+					hsl(252, 100%, 67%) 100%
+				);
+				color: white;
+				display: flex;
+				flex-direction: column;
+				text-align: center;
+				justify-content: space-around;
+				border-radius: 2rem;
+			}
+			.First-Container > p {
+				font-size: 18px;
+			}
+			.Title {
+				margin: 1.5rem;
+				color: rgb(214, 214, 214);
+			}
+			.Status-Container {
+				padding: 1rem;
+				background: linear-gradient(
+					180deg,
+					hsla(256, 72%, 46%, 1) 0%,
+					hsla(241, 72%, 46%, 0) 70%
+				);
+				border-radius: 10rem;
+				width: 25%;
+				margin: 0% auto;
+			}
+			.Status-Title {
+				font-size: 4rem;
+				margin: 0%;
+				padding: 0%;
+			}
+			.Status-Body {
+				font-size: 0.7rem;
+			}
+			.Status-Body_Great {
+				margin-block: 0.5rem;
+			}
+			.First-Container article {
+				width: 70%;
+				margin: 0% auto;
+				margin-bottom: 2rem;
+			}
 		</style>
 	</head>
 	<body>
-		<section>
-			<p>Your Result</p>
-			<div>
-				<p>76</p>
-				<p>of 100</p>
+		<section class="First-Container">
+			<p class="Title">Your Result</p>
+			<div class="Status-Container">
+				<p class="Status-Title">76</p>
+				<p class="Status-Body">of 100</p>
 			</div>
-			<p>Great</p>
-			<p>
+			<p class="Status-Body_Great">Great</p>
+			<article>
 				You scored higher than 65% of the people who have taken these tests.
-			</p>
+			</article>
 		</section>
 		<section>
 			<p>Summary</p>
