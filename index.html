@@ -33,11 +33,11 @@
 			* {
 				margin: 0;
 				padding: 0;
+				font-family: "Hanken Grotesk", sans-serif;
 			}
 			html {
 				margin: 0% auto;
 				font-size: 16px;
-				font-family: "Hanken Grotesk", sans-serif;
 				font-weight: 500;
 			}
 			.First-Container {
@@ -53,23 +53,22 @@
 				justify-content: space-around;
 				border-radius: 2rem;
 			}
-			.First-Container > p {
-				font-size: 18px;
-			}
 			.Title {
 				margin: 1.5rem;
-				color: rgb(214, 214, 214);
+				color: hsl(224, 30%, 85%);
+				font-weight: 700;
 			}
 			.Status-Container {
 				padding: 1rem;
 				background: linear-gradient(
 					180deg,
 					hsla(256, 72%, 46%, 1) 0%,
-					hsla(241, 72%, 46%, 0) 70%
+					hsla(241, 72%, 46%, 0.096) 70%
 				);
 				border-radius: 10rem;
 				width: 25%;
 				margin: 0% auto;
+				margin-bottom: 1rem;
 			}
 			.Status-Title {
 				font-size: 4rem;
@@ -77,15 +76,93 @@
 				padding: 0%;
 			}
 			.Status-Body {
-				font-size: 0.7rem;
+				font-size: 1rem;
+				color: hsl(224, 30%, 100%);
+				opacity: 50%;
 			}
 			.Status-Body_Great {
 				margin-block: 0.5rem;
+				font-size: 1.5rem;
 			}
 			.First-Container article {
 				width: 70%;
 				margin: 0% auto;
 				margin-bottom: 2rem;
+				font-weight: 600;
+				color: hsl(224, 30%, 85%);
+			}
+			.Second-Container {
+				text-align: center;
+				width: 85%;
+				margin: 0% auto;
+			}
+			.Second-Container_Title {
+				text-align: left;
+				margin-block: 1.5rem;
+				color: hsl(224, 30%, 27%);
+				font-weight: 700;
+			}
+			.Stats-Container {
+				display: flex;
+				flex-direction: column;
+				gap: 1rem;
+			}
+			.Stats-Container div {
+				display: flex;
+				justify-content: space-around;
+				padding-block: 5%;
+				border-radius: 0.5rem;
+				font-size: 1rem;
+			}
+			.Stats-Container section {
+				display: flex;
+				justify-content: space-around;
+				width: 20%;
+			}
+			.Stats-Container img {
+				padding-inline: 0.5rem;
+			}
+			.Reaction-Container {
+				color: hsl(0, 100%, 67%);
+				background-color: hsl(0, 100%, 97%);
+				opacity: 90%;
+			}
+			.Memory-Container {
+				color: hsl(39, 100%, 56%);
+				background-color: hsl(39, 100%, 97%);
+				opacity: 90%;
+			}
+			.Verbal-Container {
+				color: hsl(166, 100%, 37%);
+				background-color: hsl(166, 100%, 97%);
+				opacity: 90%;
+			}
+			.Visual-Container {
+				color: hsl(234, 85%, 45%);
+				background-color: hsl(234, 85%, 97%);
+				opacity: 90%;
+			}
+			nav {
+				width: 75%;
+				margin: 0% auto;
+				display: flex;
+				justify-content: center;
+			}
+			button {
+				text-decoration: none;
+				background: none;
+				border: none;
+			}
+			button {
+				position: relative;
+				padding: 1rem 8rem 1rem 8rem;
+				margin: 2rem auto;
+				border: none;
+				border-radius: 2rem;
+				color: white;
+				font-weight: 700;
+				font-size: 1rem;
+				background-color: hsl(224, 30%, 27%);
 			}
 		</style>
 	</head>
@@ -101,36 +178,57 @@
 				You scored higher than 65% of the people who have taken these tests.
 			</article>
 		</section>
-		<section>
-			<p>Summary</p>
-			<div>
-				<div>
-					<p>Reaction</p>
-					<p>80</p>
-					<p>/</p>
-					<p>100</p>
+		<section class="Second-Container">
+			<p class="Second-Container_Title">Summary</p>
+			<div class="Stats-Container">
+				<div class="Reaction-Container">
+					<section>
+						<img src="./assets/images/icon-reaction.svg" alt="" />
+						<p>Reaction</p>
+					</section>
+					<section>
+						<p>80</p>
+						<p>/</p>
+						<p>100</p>
+					</section>
 				</div>
-				<div>
-					<p>Memory</p>
-					<p>92</p>
-					<p>/</p>
-					<p>100</p>
+				<div class="Memory-Container">
+					<section>
+						<img src="./assets/images/icon-memory.svg" alt="" />
+						<p>Memory</p>
+					</section>
+					<section>
+						<p>92</p>
+						<p>/</p>
+						<p>100</p>
+					</section>
 				</div>
-				<div>
-					<p>Verbal</p>
-					<p>61</p>
-					<p>/</p>
-					<p>100</p>
+				<div class="Verbal-Container">
+					<section>
+						<img src="./assets/images/icon-verbal.svg" alt="" />
+						<p>Verbal</p>
+					</section>
+					<section>
+						<p>61</p>
+						<p>/</p>
+						<p>100</p>
+					</section>
 				</div>
-				<div>
-					<p>Visual</p>
-					<p>72</p>
-					<p>/</p>
-					<p>100</p>
+				<div class="Visual-Container">
+					<section>
+						<img src="./assets/images/icon-visual.svg" alt="" />
+						<p>Visual</p>
+					</section>
+
+					<section>
+						<p>72</p>
+						<p>/</p>
+						<p>100</p>
+					</section>
 				</div>
 			</div>
-			<button>Continue</button>
 		</section>
+		<nav><button>Continue</button></nav>
 
 		<div class="attribution">
 			Challenge by
