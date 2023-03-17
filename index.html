@@ -164,72 +164,96 @@
 				font-size: 1rem;
 				background-color: hsl(224, 30%, 27%);
 			}
+			@media screen and (min-width: 1440px) {
+				body {
+					background-color: hsl(221, 100%, 99%);
+				}
+				.App {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					width: 50%;
+					margin: 0% auto;
+					margin-top: 25vh;
+					background: white;
+					border-radius: 2rem;
+					box-shadow: 15px 20px 20px 1px hsl(234, 85%, 95%);
+				}
+				.Title {
+					font-size: 1.2rem;
+				}
+				.Second-Container_Title {
+					font-size: 1.2rem;
+					margin-top: 2.2rem;
+				}
+			}
 		</style>
 	</head>
 	<body>
-		<section class="First-Container">
-			<p class="Title">Your Result</p>
-			<div class="Status-Container">
-				<p class="Status-Title">76</p>
-				<p class="Status-Body">of 100</p>
-			</div>
-			<p class="Status-Body_Great">Great</p>
-			<article>
-				You scored higher than 65% of the people who have taken these tests.
-			</article>
-		</section>
-		<section class="Second-Container">
-			<p class="Second-Container_Title">Summary</p>
-			<div class="Stats-Container">
-				<div class="Reaction-Container">
-					<section>
-						<img src="./assets/images/icon-reaction.svg" alt="" />
-						<p>Reaction</p>
-					</section>
-					<section>
-						<p>80</p>
-						<p>/</p>
-						<p>100</p>
-					</section>
+		<div class="App">
+			<section class="First-Container">
+				<p class="Title">Your Result</p>
+				<div class="Status-Container">
+					<p class="Status-Title">76</p>
+					<p class="Status-Body">of 100</p>
 				</div>
-				<div class="Memory-Container">
-					<section>
-						<img src="./assets/images/icon-memory.svg" alt="" />
-						<p>Memory</p>
-					</section>
-					<section>
-						<p>92</p>
-						<p>/</p>
-						<p>100</p>
-					</section>
-				</div>
-				<div class="Verbal-Container">
-					<section>
-						<img src="./assets/images/icon-verbal.svg" alt="" />
-						<p>Verbal</p>
-					</section>
-					<section>
-						<p>61</p>
-						<p>/</p>
-						<p>100</p>
-					</section>
-				</div>
-				<div class="Visual-Container">
-					<section>
-						<img src="./assets/images/icon-visual.svg" alt="" />
-						<p>Visual</p>
-					</section>
+				<p class="Status-Body_Great">Great</p>
+				<article>
+					You scored higher than 65% of the people who have taken these tests.
+				</article>
+			</section>
+			<section class="Second-Container">
+				<p class="Second-Container_Title">Summary</p>
+				<div class="Stats-Container">
+					<div class="Reaction-Container">
+						<section>
+							<img src="./assets/images/icon-reaction.svg" alt="" />
+							<p>Reaction</p>
+						</section>
+						<section>
+							<p>80</p>
+							<p>/</p>
+							<p>100</p>
+						</section>
+					</div>
+					<div class="Memory-Container">
+						<section>
+							<img src="./assets/images/icon-memory.svg" alt="" />
+							<p>Memory</p>
+						</section>
+						<section>
+							<p>92</p>
+							<p>/</p>
+							<p>100</p>
+						</section>
+					</div>
+					<div class="Verbal-Container">
+						<section>
+							<img src="./assets/images/icon-verbal.svg" alt="" />
+							<p>Verbal</p>
+						</section>
+						<section>
+							<p>61</p>
+							<p>/</p>
+							<p>100</p>
+						</section>
+					</div>
+					<div class="Visual-Container">
+						<section>
+							<img src="./assets/images/icon-visual.svg" alt="" />
+							<p>Visual</p>
+						</section>
 
-					<section>
-						<p>72</p>
-						<p>/</p>
-						<p>100</p>
-					</section>
+						<section>
+							<p>72</p>
+							<p>/</p>
+							<p>100</p>
+						</section>
+					</div>
 				</div>
-			</div>
-		</section>
-		<nav><button>Continue</button></nav>
-
+				<nav><button>Continue</button></nav>
+			</section>
+		</div>
+		<br />
 		<div class="attribution">
 			Challenge by
 			<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
